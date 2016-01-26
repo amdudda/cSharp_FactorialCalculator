@@ -68,7 +68,7 @@
             // 
             this.txtNumber.Location = new System.Drawing.Point(100, 28);
             this.txtNumber.Name = "txtNumber";
-            this.txtNumber.Size = new System.Drawing.Size(100, 20);
+            this.txtNumber.Size = new System.Drawing.Size(149, 20);
             this.txtNumber.TabIndex = 3;
             // 
             // txtFactorial
@@ -76,13 +76,14 @@
             this.txtFactorial.Location = new System.Drawing.Point(100, 60);
             this.txtFactorial.Name = "txtFactorial";
             this.txtFactorial.ReadOnly = true;
-            this.txtFactorial.Size = new System.Drawing.Size(100, 20);
-            this.txtFactorial.TabIndex = 4;
+            this.txtFactorial.Size = new System.Drawing.Size(149, 20);
+            this.txtFactorial.TabIndex = 0;
+            this.txtFactorial.TabStop = false;
             // 
             // btnCalculate
             // 
             this.btnCalculate.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCalculate.Location = new System.Drawing.Point(38, 99);
+            this.btnCalculate.Location = new System.Drawing.Point(100, 99);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(75, 23);
             this.btnCalculate.TabIndex = 5;
@@ -93,7 +94,7 @@
             // btnExit
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(124, 99);
+            this.btnExit.Location = new System.Drawing.Point(174, 99);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 6;
@@ -107,7 +108,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(230, 156);
+            this.ClientSize = new System.Drawing.Size(314, 156);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.txtFactorial);
