@@ -81,6 +81,7 @@
             // 
             // btnCalculate
             // 
+            this.btnCalculate.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCalculate.Location = new System.Drawing.Point(38, 99);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(75, 23);
@@ -91,6 +92,7 @@
             // 
             // btnExit
             // 
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Location = new System.Drawing.Point(124, 99);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
@@ -101,8 +103,10 @@
             // 
             // frmFactorialCalculator
             // 
+            this.AcceptButton = this.btnCalculate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(230, 156);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnCalculate);
