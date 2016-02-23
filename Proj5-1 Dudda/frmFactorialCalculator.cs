@@ -24,10 +24,28 @@ namespace Proj5_1_Dudda
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-            string toFactorialize = txtNumber.Text;
-            if (IsBetween1and20(toFactorialize))
+            try
             {
-                Factorialize(toFactorialize);
+                // throw new Exception();
+                string toFactorialize = txtNumber.Text;
+                if (IsBetween1and20(toFactorialize))
+                {
+                    Factorialize(toFactorialize);
+                }
+            }
+            catch (OverflowException)
+            {
+                // our data validation should prevent this from ever happening, but let's be really sure.
+                MessageBox.Show("The factorial got too large.  Try a smaller number.", "Overflow Exception");
+            }
+            catch (Exception ex)
+            {
+                // hopefully this never happens, but Just In Case...
+                string myMsg = "Something unexpected went wrong.  Here's some details you can give to your IT department.\n\n";
+                MessageBox.Show(
+                    myMsg + ex.Message + "\n" + ex.GetType() + "\n" + ex.StackTrace,
+                    "Oops! An error occurred."
+                    );
             }
         }
 
