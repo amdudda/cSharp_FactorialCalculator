@@ -52,7 +52,7 @@ namespace Proj5_1_Dudda
         private void Factorialize(string toFactorialize)
         {
             short toFactor = Convert.ToInt16(toFactorialize);
-            double result = 1;
+            long result = 1;
 
             for (int i = 1; i <= toFactor; i++)
             {
